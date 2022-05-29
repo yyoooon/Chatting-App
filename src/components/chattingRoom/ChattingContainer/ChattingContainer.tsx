@@ -39,10 +39,9 @@ const ChattingContainer = ({
           }
         }
         return (
-          <>
+          <Wrap key={id}>
             {type === 'image' ? (
               <ImageMessage
-                key={id}
                 user={user}
                 type={type}
                 content={content}
@@ -50,7 +49,6 @@ const ChattingContainer = ({
               ></ImageMessage>
             ) : (
               <Message
-                key={id}
                 user={user}
                 type={type}
                 content={content}
@@ -60,7 +58,7 @@ const ChattingContainer = ({
             {viewDateLine && (
               <DateLine date={formatDate(nextMessageCreatedAt)}></DateLine>
             )}
-          </>
+          </Wrap>
         );
       })}
     </Container>
@@ -78,4 +76,9 @@ const Container = styled.main`
   ::-webkit-scrollbar {
     display: none;
   }
+`;
+
+const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
 `;

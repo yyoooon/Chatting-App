@@ -1,0 +1,60 @@
+{
+  "chattingList": [
+    {
+      "id": "0",
+      "user": "장만월 사장님",
+      "lastMessageContent": "어딘데 출근 안하니, 죽고싶니?",
+      "createdAt": "",
+      "updatedAt": 1653525120000,
+      "noReadMessageLength": 2
+    },
+    {
+      "id": "1",
+      "user": "신정근 바텐더",
+      "lastMessageContent": "오시는 길에 와인 몇병만 사다주세요.",
+      "createdAt": "",
+      "updatedAt": 1653523200000,
+      "noReadMessageLength": 1
+    },
+    {
+      "id": "2",
+      "user": "이미라 의사",
+      "lastMessageContent": "휴가 잘 보내고 계신가요? 다름이 아니라 지",
+      "createdAt": "",
+      "updatedAt": 1653462000000,
+      "noReadMessageLength": 1
+    },
+    {
+      "id": "3",
+      "user": "구찬성 지배인",
+      "lastMessageContent": "아 휴가셨군요. 약속은 다음으로 미루시죠!",
+      "createdAt": "",
+      "updatedAt": 1653368400000,
+      "noReadMessageLength": 1
+    },
+    {
+      "id": "4",
+      "user": "노준석 총지배인",
+      "lastMessageContent": "휴가에서 언제 돌아오시는지요. 돌아오시면 상의드릴 것이 있습니다",
+      "createdAt": "",
+      "updatedAt": 1653265920000,
+      "noReadMessageLength": 1
+    },
+    {
+      "id": "5",
+      "user": "김유나 인턴",
+      "lastMessageContent": "304호 키를 잃어버렸어요 어떻게 해야하죠 ㅠ",
+      "createdAt": "",
+      "updatedAt": 1653291120000,
+      "noReadMessageLength": 1
+    },
+    {
+      "id": "6",
+      "user": "구현모 ",
+      "lastMessageContent": "술먹자",
+      "createdAt": "",
+      "updatedAt": 1653150240000,
+      "noReadMessageLength": 1
+    }
+  ]
+}

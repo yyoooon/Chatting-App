@@ -69,7 +69,11 @@ const postChatting = ({
 
 const removeNoReadCount = (roomId: string) => {
   const chattingListData = getChattingList();
-  chattingListData[Number(roomId)].noReadMessageLength = 0;
+  chattingListData.map((chatting, index) => {
+    if (roomId === chatting.id) {
+      chattingListData[index].noReadMessageLength = 0;
+    }
+  });
   setItem('chatting-list', chattingListData);
 };
 

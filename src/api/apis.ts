@@ -11,14 +11,14 @@ const setInitialChattingList = () => {
 const setInitialChattingRoom = (roomId: string | undefined) => {
   setItem(
     `chatting-room-${roomId}`,
-    chattingRoomData.chattingRoomList[Number(roomId)],
+    chattingRoomData.chattingRoomList[Number(roomId)]
   );
 };
 
 // 데이터 가져오기
 const sortByRecentUpdateTime = (chattingList: ChattingListType[]) => {
   return chattingList.sort(
-    (a: ChattingListType, b: ChattingListType) => b.updatedAt - a.updatedAt,
+    (a: ChattingListType, b: ChattingListType) => b.updatedAt - a.updatedAt
   );
 };
 
@@ -34,7 +34,7 @@ const getChattingRoom = (roomId: string | undefined) => {
 // 데이터 추가, 삭제하기
 const addChattingMessageToStorage = (
   roomId: string,
-  newData: ChattingMessageType,
+  newData: ChattingMessageType
 ) => {
   const chattingRoomData = getChattingRoom(roomId);
   chattingRoomData.messages = [...chattingRoomData.messages, newData];
@@ -43,11 +43,15 @@ const addChattingMessageToStorage = (
 
 const upDateChattingListToStorage = (
   roomId: string,
-  newData: ChattingMessageType,
+  newData: ChattingMessageType
 ) => {
   const chattingListData = getChattingList();
-  chattingListData[Number(roomId)].lastMessageContent = newData.content;
-  chattingListData[Number(roomId)].updatedAt = newData.createdAt;
+  chattingListData.map((chatting, index) => {
+    if (roomId === chatting.id) {
+      chattingListData[index].lastMessageContent = newData.content;
+      chattingListData[index].updatedAt = newData.createdAt;
+    }
+  });
   setItem('chatting-list', chattingListData);
 };
 

@@ -151,3 +151,4 @@ new Intl.DateTimeFormat("ko", { timeStyle: 'short' }).format(new Date())
 
 - 최신순 정렬을 post할 때 정렬하고 저장할 지, get할 때 정렬하고 가져올지 고민했습니다.
   > post api에 이미 복잡한 로직이 많았기에 get에 위임했습니다.
+

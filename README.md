@@ -13,6 +13,8 @@ https://chatting-pi.vercel.app/list
 
 ## 기술 스택
 - React
+- Cra
+- Craco
 - Typescript
 - Emotion
 - React Router Dom
